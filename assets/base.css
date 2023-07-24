@@ -1,0 +1,62 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.text-white {
+  color: white;
+}
+.text-black {
+  color: var(--black-color);
+}
+.bg-black {
+  background-color: var(--black-color);
+}
+.bg-main {
+  background-color: var(--main-color);
+}
+.mg-top {
+  margin-top: 30px;
+}
+.fontsize60 {
+  font-size: 70px;
+}
+.fontweight600 {
+  font-weight: 600;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Hiệu ứng chạy từ trái sang phải */
+@keyframes slide-left-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Hiệu ứng chạy từ phải sang trái */
+@keyframes slide-right-to-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Áp dụng hiệu ứng slide-up vào phần tử có class "slide-up-animation" */
+.slide-up {
+  animation: slide-up 1s ease-out; /* Thay đổi giá trị thời gian và chế độ ease-out theo ý muốn */
+}
+.ltr {
+  animation: slide-left-to-right 1s ease-out; /* Thay đổi giá trị thời gian và chế độ ease-out theo ý muốn */
+}
+.rtl {
+  animation: slide-right-to-left 1s ease-out; /* Thay đổi giá trị thời gian và chế độ ease-out theo ý muốn */
+}

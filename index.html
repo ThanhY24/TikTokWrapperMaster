@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dữ Liệu Tiktok của bạn</title>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/color.css" />
+    <link rel="stylesheet" href="./assets/base.css" />
+    <link rel="stylesheet" href="./assets/home.css" />
+    <link rel="stylesheet" href="./assets/choosefile.css" />
+    <link rel="stylesheet" href="./assets/showdata.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bg-main home" id="home">
+      <div class="home-l">
+        <p class="home-l-tittle">TikTok Wrapper Master</p>
+        <p class="home-l-content">
+          Thông tin về thời gian bạn ở trên TikTok 🚀
+        </p>
+        <p class="home-l-instructions">
+          "TikTok Wrapper Master" cung cấp thông tin thống kê về hoạt động của
+          bạn trên TikTok. Để sử dụng ứng dụng này, bạn cần xuất dữ liệu TikTok
+          của mình từ liên kết
+          <a
+            href="https://www.tiktok.com/setting/download-your-data"
+            target="_blank"
+            >https://www.tiktok.com/setting/download-your-data</a
+          >
+          dưới định dạng tệp <span>"JSON - Machine-readable file"</span>. Dữ
+          liệu xuất bao gồm thông tin hoạt động của bạn trên TikTok và không bao
+          gồm thông tin đăng nhập!Để tìm hiểu thêm về cách xác minh điều này,
+          xin hãy
+          <a>nhấn vào đây.</a>
+        </p>
+        <a
+          href="https://www.tiktok.com/setting/download-your-data"
+          target="_blank"
+          class="button button1"
+          >Mở TikTok và yêu cầu xuất dữ liệu của tôi &nbsp;&nbsp;
+          <i class="fas fa-external-link-alt"></i
+        ></a>
+        <p href="#" class="button button2 bg-black" id="start">
+          Tôi đã có dữ liệu TikTok của mình! &nbsp;&nbsp;<i
+            class="fas fa-arrow-right"
+          ></i>
+        </p>
+      </div>
+      <div class="home-r">
+        <img src="./resources/images/hero.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="choose-file bg-black" id="choose-file">
+      <p class="choose-file-title">Chọn dữ liệu TikTok của bạn để bắt đầu</p>
+      <p class="choose-file-content">
+        TikTok Wrapper Master cần dữ liệu TikTok của bạn để tạo ra thống kê của
+        bạn.
+      </p>
+      <p class="choose-file-content">
+        Dữ liệu của bạn sẽ không được tải lên bất kỳ máy chủ nào, tất cả thống
+        kê đều được tạo ra trực tiếp trên trình duyệt của bạn.
+      </p>
+      <label for="apply"
+        ><input type="file" name="" id="apply" accept=".json" /><i
+          class="fas fa-file-upload"
+        ></i
+        >&nbsp;&nbsp;Chọn tệp</label
+      >
+    </div>
+    <div class="showdata rtl" id="showdata">
+      <div id="showdata-block1" class="showdata-block1">
+        <p class="showdata-title" id="username">
+          Xin chào, thanhy2408!
+          <img src="./resources/images/hello.png" alt="" class="showdata-pic" />
+        </p>
+        <p class="showdata-conntent">
+          Hãy cùng xem hoạt động của bạn trên TikTok, nhé!
+        </p>
+        <p class="showdata-button mg-top" id="button-next1">Đi thôi nào!</p>
+      </div>
+      <div id="showdata-block" class="showdata-block rtl">
+        <p class="showdata-conntent fontweight600" id="header">
+          Đến 01/03/2023 bạn đã xem,
+        </p>
+        <p class="showdata-title mg-top fontsize60" id="data">20,000</p>
+        <p class="showdata-title" id="des">videos</p>
+        <p class="showdata-conntent mg-top" id="cmt">Xem gì thấy ghê dị?</p>
+        <p class="showdata-button mg-top" id="button-next">Tiếp nào</p>
+      </div>
+    </div>
+    <script src="./actions/index.js"></script>
+  </body>
+</html>
